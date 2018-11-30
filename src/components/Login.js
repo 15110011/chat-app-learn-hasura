@@ -59,7 +59,7 @@ const LoginComponent = (props) => {
                       type="submit"
                       onClick={(e) => {
                         e.preventDefault();
-                        if (props.username.match(/^[a-zA-Z0-9]+([_\s\-]?[a-zA-Z0-9])*$/g)) {
+                        if (props.username.match(/^[a-zA-Z0-9]+([_\s]?[a-zA-Z0-9])*$/g)) {
                           insert_user();
                         } else {
                           alert("Invalid username. Spaces and special characters not allowed. Please try again");
